@@ -2,6 +2,8 @@ import React, { useState, useMemo, useEffect } from "react";
 import { motion } from "motion/react";
 // @ts-ignore
 import upiQrImage from "../assets/images/upi_payment_qr_1782979394227.jpg";
+// @ts-ignore
+import heroGirlImage from "../assets/images/preety_gri_hero_1782808753655.jpg";
 import { 
   Search, 
   Clock, 
@@ -595,9 +597,8 @@ ${realTrackingTime}`;
 
             {/* Generated silhouette image of the high fashion model with bob cut */}
             <img 
-              src="/src/assets/images/preety_gri_hero_1782808753655.jpg" 
+              src={heroGirlImage} 
               alt="Prestige Aesthetics Model Silhouette"
-              referrerPolicy="no-referrer"
               className="absolute inset-0 w-full h-full object-cover z-0 mix-blend-normal transform scale-[1.02] hover:scale-105 transition-all duration-700"
             />
             
