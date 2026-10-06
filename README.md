@@ -1,18 +1,24 @@
-```md
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:7C3AED,100:EC4899&height=220&section=header&text=NEXORA%20HAIR%20STUDIO&fontSize=38&fontColor=FFFFFF&fontAlignY=38&desc=STYLE%20YOUR%20CONFIDENCE&descAlignY=58&descSize=18&animation=twinkling" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:7C3AED,100:EC4899&height=200&section=header&text=NEXORA%20HAIR%20STUDIO&fontSize=38&fontColor=FFFFFF&fontAlignY=38&desc=STYLE%20YOUR%20CONFIDENCE&descAlignY=60&descSize=18&animation=twinkling" width="100%" alt="Nexora Hair Studio Header"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=25&duration=3000&pause=1000&color=EC4899&center=true&vCenter=true&width=650&lines=Where+Style+Meets+Elegance;Your+Hair%2C+Your+Identity;Modern+Salon.+Timeless+Beauty." alt="Animated Typing" />
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=24&duration=3000&pause=1000&color=EC4899&center=true&vCenter=true&width=600&lines=Where+Style+Meets+Elegance;Your+Hair%2C+Your+Identity;Modern+Salon.+Timeless+Beauty." alt="Typing Animation"/>
 
-<br/>
+<br/><br/>
 
 <a href="https://tejaswiiiiiisen.github.io/Nexora-Hair-Studio/">
-<img src="https://img.shields.io/badge/✦_EXPLORE_LIVE_WEBSITE-EC4899?style=for-the-badge&logoColor=white" alt="Live Website"/>
+<img src="https://img.shields.io/badge/VISIT_LIVE_WEBSITE-EC4899?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Website"/>
 </a>
 
-<img src="https://img.shields.io/badge/PROJECT-HAIR_STUDIO-7C3AED?style=for-the-badge" alt="Project"/>
-<img src="https://img.shields.io/badge/DESIGN-MODERN-111827?style=for-the-badge" alt="Modern Design"/>
+<a href="https://github.com/tejaswiiiiiisen/Nexa-Hair-Studio">
+<img src="https://img.shields.io/badge/GITHUB_REPOSITORY-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository"/>
+</a>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/PROJECT-HAIR_STUDIO-7C3AED?style=flat-square"/>
+<img src="https://img.shields.io/badge/DESIGN-MODERN-EC4899?style=flat-square"/>
+<img src="https://img.shields.io/badge/STATUS-LIVE-16A34A?style=flat-square"/>
 
 </div>
 
@@ -20,33 +26,36 @@
 
 ## ✨ About The Project
 
-**Nexora Hair Studio** is a modern salon website project created to establish a stylish digital presence for a hair studio.
+**Nexora Hair Studio** is a modern hair salon website project designed to create a stylish digital presence for a hair studio.
 
-The project focuses on elegant presentation, engaging visuals, intuitive navigation, and a user-friendly browsing experience.
+The project focuses on elegant presentation, user-friendly navigation, responsive layouts, and an engaging browsing experience.
 
-> **Your Hair. Your Style. Your Confidence.**
+> *Your Hair. Your Style. Your Confidence.*
 
 ## 🌟 Features
 
 - 💇 Modern hair studio branding
-- 🎨 Stylish and visually appealing interface
-- 📱 Responsive design for different screen sizes
-- ✨ Interactive website elements and animations
+- 🎨 Stylish and clean user interface
+- 📱 Responsive website layout
+- ✨ Interactive elements and visual effects
 - 🧭 Simple and intuitive navigation
-- 💻 Clean and organized frontend experience
-- 🌐 Live website hosted on GitHub Pages
+- ⚙️ Backend development using Node.js and Express.js
+- 🗄️ Database management using MongoDB
+- 🌐 Live website deployment
 
-## 🖥️ Live Demo
+## 🖥️ Live Website
 
 <div align="center">
 
 ### Experience Nexora Hair Studio
 
 <a href="https://tejaswiiiiiisen.github.io/Nexora-Hair-Studio/">
-<img src="https://img.shields.io/badge/VISIT_WEBSITE-Explore_Now-EC4899?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit Website"/>
+<img src="https://img.shields.io/badge/EXPLORE_LIVE_WEBSITE-EC4899?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Explore Live Website"/>
 </a>
 
-**[Open Nexora Hair Studio →](https://tejaswiiiiiisen.github.io/Nexora-Hair-Studio/)**
+<br/><br/>
+
+**[Visit Nexora Hair Studio →](https://tejaswiiiiiisen.github.io/Nexora-Hair-Studio/)**
 
 </div>
 
@@ -54,53 +63,42 @@ The project focuses on elegant presentation, engaging visuals, intuitive navigat
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode&theme=dark" alt="Technologies"/>
+### Frontend
+
+<img src="https://skillicons.dev/icons?i=html,css,js&theme=dark" alt="HTML CSS JavaScript"/>
+
+<br/>
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+
+<br/><br/>
+
+### Backend
+
+<img src="https://skillicons.dev/icons?i=nodejs,express&theme=dark" alt="Node.js Express.js"/>
+
+<br/>
+
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/>
+
+<br/><br/>
+
+### Database
+
+<img src="https://skillicons.dev/icons?i=mongodb&theme=dark" alt="MongoDB"/>
+
+<br/>
+
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
 
 </div>
 
-## 📂 Run Locally
+## ⚙️ Run Locally
 
 **1. Clone the repository**
 
 ```bash
 git clone https://github.com/tejaswiiiiiisen/Nexa-Hair-Studio.git
-```
-
-**2. Navigate to the project folder**
-
-```bash
-cd Nexa-Hair-Studio
-```
-
-**3. Open the project**
-
-Open `index.html` in your browser or use the VS Code Live Server extension.
-
-## 👨‍💻 Developer
-
-<div align="center">
-
-### Tejaswi Sen
-
-<a href="https://github.com/tejaswiiiiiisen">
-<img src="https://img.shields.io/badge/GitHub-Tejaswi_Sen-181717?style=for-the-badge&logo=github" alt="GitHub"/>
-</a>
-
-<a href="https://tejaswiiiiiisen.github.io/Nexora-Hair-Studio/">
-<img src="https://img.shields.io/badge/Live_Project-Nexora_Hair_Studio-EC4899?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Project"/>
-</a>
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:EC4899,50:7C3AED,100:09090B&height=120&section=footer" width="100%" />
-
-**Crafted with creativity and a passion for modern web design.**
-
-⭐ If you like this project, consider giving the repository a star!
-
-</div>
-```
