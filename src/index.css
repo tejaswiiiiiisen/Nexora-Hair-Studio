@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Warm Luxury Salon Theme variables */
+  --color-nexa-neon-orange: #d97706; /* Warm Golden Orange */
+  --color-nexa-neon-violet: #78350f; /* Deep Warm Chocolate Brown */
+  --color-nexa-neon-cyan: #f5ebe6;   /* Luxurious Champagne Cream */
+  --color-nexa-amber: #e28743;       /* Warm Soft Orange Glow */
+}
+
+/* Custom background animation and styling */
+@keyframes fluid-glow {
+  0% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(40px, -60px) scale(1.2) rotate(120deg);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.85) rotate(240deg);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1) rotate(360deg);
+  }
+}
+
+.animate-fluid-1 {
+  animation: fluid-glow 25s infinite ease-in-out;
+}
+
+.animate-fluid-2 {
+  animation: fluid-glow 30s infinite ease-in-out alternate;
+}
+
+.animate-fluid-3 {
+  animation: fluid-glow 35s infinite ease-in-out 5s;
+}
+
+/* Premium Glassmorphism Panel styles */
+.glass-panel {
+  background: rgba(8, 8, 8, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(18, 12, 10, 0.85);
+  border-color: rgba(217, 119, 6, 0.35);
+  box-shadow: 0 0 30px rgba(217, 119, 6, 0.12), 0 0 50px rgba(78, 52, 46, 0.05);
+  transform: translateY(-2px);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(217, 119, 6, 0.4);
+  box-shadow: 0 0 15px rgba(217, 119, 6, 0.15);
+}
+
+.glass-btn-primary {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 50%, #4e342e 100%);
+  color: white;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(217, 119, 6, 0.2);
+}
+.glass-btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: all 0.6s ease;
+}
+.glass-btn-primary:hover::before {
+  left: 100%;
+}
+.glass-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 35px rgba(217, 119, 6, 0.45), 0 0 60px rgba(78, 52, 46, 0.25);
+}
+
+.neon-border-orange {
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  box-shadow: 0 0 15px rgba(217, 119, 6, 0.08);
+}
+
+.neon-border-violet {
+  border: 1px solid rgba(78, 52, 46, 0.45);
+  box-shadow: 0 0 15px rgba(78, 52, 46, 0.08);
+}
+
+.glow-text-orange {
+  text-shadow: 0 0 12px rgba(217, 119, 6, 0.5);
+}
+
+.glow-text-violet {
+  text-shadow: 0 0 12px rgba(78, 52, 46, 0.5);
+}
+
+.glow-text-white {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.35);
+}
+
+/* Custom radial background mesh layers */
+.mesh-radial-1 {
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.08) 0%, transparent 60%);
+}
+.mesh-radial-2 {
+  background: radial-gradient(circle, rgba(78, 52, 46, 0.12) 0%, transparent 60%);
+}
+.mesh-radial-3 {
+  background: radial-gradient(circle, rgba(245, 235, 230, 0.06) 0%, transparent 50%);
+}
+
+/* Liquid Glass cards */
+.liquid-glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.liquid-glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15), 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 106, 0, 0.4);
+}
+
+.shimmer-active {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* 3D Card Flip System */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.ease-spring {
+  transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Custom premium animation keyframes */
+@keyframes luxury-shimmer {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+.animate-luxury-shimmer {
+  animation: luxury-shimmer 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+@keyframes ripple {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.8;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+  }
+}
+.animate-ripple {
+  animation: ripple 0.6s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+}
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes button-liquid {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-button-liquid {
+  animation: button-liquid 1.5s infinite;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Cinematic Infinite Marquee */
+@keyframes marquee-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right linear infinite;
+}
+
+/* Pause continuous movement when hovering over the row */
+.hover-pause:hover .animate-marquee-left,
+.hover-pause:hover .animate-marquee-right {
+  animation-play-state: paused;
+}
+
+/* Cinematic Smoke Reveal Keyframes */
+@keyframes luxury-text-reveal {
+  0% {
+    filter: blur(12px);
+    opacity: 0.2;
+  }
+  18.18% { /* 2s / 11s */
+    filter: blur(12px);
+    opacity: 0.3;
+  }
+  54.54% { /* 6s / 11s */
+    filter: blur(3px);
+    opacity: 0.85;
+  }
+  72.72% { /* 8s / 11s */
+    filter: blur(0px);
+    opacity: 1;
+  }
+  100% { /* 11s / 11s */
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes luxury-smoke-pass {
+  0% {
+    transform: translate3d(-80%, -50%, 0) scale(0.8) rotate(-5deg);
+    opacity: 0;
+  }
+  18.18% { /* 2s / 11s */
+    transform: translate3d(-20%, -50%, 0) scale(1) rotate(0deg);
+    opacity: 0.5;
+  }
+  54.54% { /* 6s / 11s */
+    transform: translate3d(70%, -50%, 0) scale(1.4) rotate(4deg);
+    opacity: 0.75;
+  }
+  72.72% { /* 8s / 11s */
+    transform: translate3d(150%, -50%, 0) scale(1) rotate(8deg);
+    opacity: 0;
+  }
+  100% { /* 11s / 11s */
+    transform: translate3d(150%, -50%, 0) scale(1) rotate(8deg);
+    opacity: 0;
+  }
+}
+
+.animate-luxury-text {
+  animation: luxury-text-reveal 11s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  will-change: filter, opacity;
+}
+
+.animate-luxury-smoke {
+  animation: luxury-smoke-pass 11s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  will-change: transform, opacity;
+}
+
+/* Luxury Arrow Float and Glow Animation */
+@keyframes luxury-arrow-float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 4px rgba(249, 87, 22, 0.35));
+  }
+  50% {
+    transform: translateY(-6px) scale(1.08);
+    filter: drop-shadow(0 0 16px rgba(249, 87, 22, 0.85));
+  }
+}
+
+.animate-luxury-arrow {
+  animation: luxury-arrow-float 3.5s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+/* Premium Metallic Shine Animation */
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+.animate-metallic-shine {
+  animation: shine 6s ease-in-out infinite;
+  background-size: 200% auto;
+}
+
+/* Premium Luxury Image Floating and Smoke Glow Animations */
+@keyframes luxury-image-float {
+  0%, 100% {
+    transform: translateY(0) scale(1.02);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.04);
+  }
+}
+
+.animate-luxury-float {
+  animation: luxury-image-float 5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes slow-smoke-glow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+    filter: blur(40px);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.15) rotate(2deg);
+    filter: blur(60px);
+  }
+}
+
+.animate-slow-smoke-glow {
+  animation: slow-smoke-glow 8s ease-in-out infinite;
+  will-change: transform, filter, opacity;
+}
+
+/* Premium Entry Blur Animations */
+@keyframes blur-in-slow {
+  0% {
+    filter: blur(14px);
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-blur-in-slow {
+  animation: blur-in-slow 2.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-blur-in-delayed {
+  animation: blur-in-slow 2.4s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+  opacity: 0; /* starts hidden and fades in */
+}
+
+
+
+

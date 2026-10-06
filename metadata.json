@@ -1,0 +1,8 @@
+{
+  "name": "Nexa Hair Studio",
+  "description": "A premium futuristic Salon SaaS Management System featuring luxury service booking, client command center, owner intelligence, and interactive business analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
